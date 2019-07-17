@@ -1,0 +1,38 @@
+
+spring:
+  datasource:
+    name: druidDataSource
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql://192.168.1.106:3306/mq?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root123
+      filters: stat
+      max-active: 100
+      initial-size: 5
+      max-wait: 60000
+      min-idle: 2
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select '1' from dual
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 50
+      max-pool-prepared-statement-per-connection-size: 20
+
+  profiles:
+    active: dev
+
+  flyway:
+    baseline-on-migrate: true
+#    clean-on-validation-error: true  # 仅开发可用
+    locations: classpath:/db/migration
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  config-location:  classpath:/config/mybatis-config.xml
+
+

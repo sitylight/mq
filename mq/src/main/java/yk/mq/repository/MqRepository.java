@@ -1,6 +1,6 @@
-package com.yk.mq.repository;
+package yk.mq.repository;
 
-import com.yk.mq.model.mq.Mq;
+import yk.mq.model.mq.Mq;
 
 import java.util.List;
 import java.util.Optional;

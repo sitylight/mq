@@ -24,11 +24,16 @@ spring:
       pool-prepared-statements: true
       max-open-prepared-statements: 50
       max-pool-prepared-statement-per-connection-size: 20
-
   flyway:
     baseline-on-migrate: true
     clean-on-validation-error: true  # 仅开发可用
     locations: classpath:/db/migration
+
+  rabbitmq:
+    host: 192.168.1.106
+    username: guest
+    password: guest
+    port: 5672
 
 mybatis:
   mapper-locations: classpath:/mapper/*.xml

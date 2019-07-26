@@ -1,7 +1,7 @@
-package com.yk.mq.mapper;
+package yk.mq.mapper;
 
-import com.yk.mq.model.mq.Mq;
 import org.apache.ibatis.annotations.Mapper;
+import yk.mq.model.mq.Mq;
 
 import java.util.List;
 

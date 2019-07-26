@@ -1,4 +1,4 @@
-package com.yk.mq.model.mq;
+package yk.mq.model.mq;
 
 import lombok.Data;
 

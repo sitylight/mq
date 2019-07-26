@@ -1,11 +1,11 @@
-package com.yk.mq.usecase.impl;
+package yk.mq.usecase.impl;
 
-import com.yk.mq.model.mq.Mq;
-import com.yk.mq.repository.MqRepository;
-import com.yk.mq.usecase.InputUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import yk.mq.model.mq.Mq;
+import yk.mq.repository.MqRepository;
+import yk.mq.usecase.InputUseCase;
 
 /**
  * @author lcb 2019/7/17

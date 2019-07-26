@@ -1,12 +1,12 @@
-package com.yk.mq.repository.impl;
+package yk.mq.repository.impl;
 
-import com.yk.mq.mapper.MqMapper;
-import com.yk.mq.model.mq.Mq;
-import com.yk.mq.repository.MqRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import tk.mybatis.mapper.entity.Example;
+import yk.mq.mapper.MqMapper;
+import yk.mq.model.mq.Mq;
+import yk.mq.repository.MqRepository;
 
 import java.util.List;
 import java.util.Optional;

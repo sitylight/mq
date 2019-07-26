@@ -1,8 +1,5 @@
-package com.yk.mq.api;
+package yk.mq.api;
 
-import com.yk.mq.model.mq.Mq;
-import com.yk.mq.usecase.impl.GetMqsUseCase;
-import com.yk.mq.usecase.impl.SaveMqUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import yk.mq.model.mq.Mq;
+import yk.mq.usecase.impl.GetMqsUseCase;
+import yk.mq.usecase.impl.SaveMqUseCase;
 
 import java.time.LocalDateTime;
 

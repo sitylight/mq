@@ -1,4 +1,4 @@
-package com.yk.mq;
+package yk.mq;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

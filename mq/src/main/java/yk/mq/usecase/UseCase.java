@@ -1,4 +1,4 @@
-package com.yk.mq.usecase;
+package yk.mq.usecase;
 
 /**
  * @author lcb 2019/7/17
